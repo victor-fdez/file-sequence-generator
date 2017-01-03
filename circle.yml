@@ -5,7 +5,10 @@ machine:
 dependencies:
   pre:
     - echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
+    - npm install
 test:
+  override:
+    - npm run test 
 deployment:
   develop:
     branch: master
