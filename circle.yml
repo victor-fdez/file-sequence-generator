@@ -1,3 +1,9 @@
 machine:
+  node:
+    version: 6.9.1
   timezone: America/Denver
-  test:
+test:
+deployment:
+  develop:
+    branch: master
+
