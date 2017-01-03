@@ -4,7 +4,7 @@
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE) [![CircleCI](https://circleci.com/gh/victor-fdez/file-sequence-generator.svg?style=svg)](https://circleci.com/gh/victor-fdez/file-sequence-generator) 
 
-Sometimes you need to keep versions of logs as you a script several times, or every time you restart your server. After a while you might also want to remove old logs, or compressed and after certain while remove them. This package includes several function that will allow you to do this from within your NodeJS code. 
+Sometimes you need to keep versions of logs as you run a script several times, or every time you restart your server. As logs get older you compress them, and remove them after a while. This package includes several function that will allow you to do this from within your NodeJS code and keep it consistent thru different logs. It also allows you to specify options on a per log basis.
 
 ## Installation
 
