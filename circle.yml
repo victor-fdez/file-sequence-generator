@@ -1,1 +1,19 @@
+machine:
+  node:
+    version: 6.9.1
+  timezone: America/Denver
+dependencies:
+  pre:
+    - echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
+    - npm install
+test:
+  override:
+    - npm run test: 
+        environment:
+          MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
+deployment:
+  develop:
+    branch: master
+    commands:
+      - npm publish
 

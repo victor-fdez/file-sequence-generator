@@ -3,6 +3,7 @@ generator:
 	npm install
 
 test:
-	mocha
+	mocha test --reporter mocha-junit-reporter
+	#mocha
 
 .PHONY: generator, test
