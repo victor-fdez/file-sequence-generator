@@ -1,18 +1,18 @@
 # file-sequence-generator
 
-## A NodeJS tool to generator a sequence of file names for logging (also compressed old files)
+### A NodeJS tool to generator a sequence of file names for logging (also compressed old files)
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE) [![CircleCI](https://circleci.com/gh/victor-fdez/file-sequence-generator.svg?style=svg)](https://circleci.com/gh/victor-fdez/file-sequence-generator) 
 
 Sometimes you need to keep versions of logs as you a script several times, or every time you restart your server. After a while you might also want to remove old logs, or compressed and after certain while remove them. This package includes several function that will allow you to do this from within your NodeJS code. 
 
-### Installation
+## Installation
 
 ```bash
 npm install --save file-sequence-generator
 ```
 
-### Example
+## Example
 
 ```javascript
 var fileSeq = require('file-sequence-generator');
@@ -35,11 +35,12 @@ fileSeqNext(filepath);
 // til infinitum.
 ```
 
-### Test
+## Test
 
 ```bash
 npm run test
 ```
-### Pull Request
+
+## Pull Request
 
 please look at the `PULL_REQUEST_TEMPLATE.md`
