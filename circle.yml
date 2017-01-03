@@ -8,7 +8,9 @@ dependencies:
     - npm install
 test:
   override:
-    - npm run test 
+    - npm run test: 
+      environment:
+        MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
 deployment:
   develop:
     branch: master
